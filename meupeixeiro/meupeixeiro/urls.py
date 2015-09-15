@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from peixeiro import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', views.index),
+    url(r'^login', views.do_login),
+    url(r'^users/add', views.add_user),
+    url(r'^logout', views.do_logout),
 ]
