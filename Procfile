@@ -1,1 +1,1 @@
-web: gunicorn meupeixeiro.meupeixeiro.wsgi --log-file -
+web: gunicorn meupeixeiro.wsgi:application --log-file -
