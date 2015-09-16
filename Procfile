@@ -1,1 +1,1 @@
-web: gunicorn peixeiro.wsgi --log-file -
+web: gunicorn meupeixeiro.meupeixeiro.wsgi --log-file -
